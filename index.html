@@ -22,10 +22,10 @@
 <body>
     <div class="form">
         <h2>회원가입</h2>
-        <form name="signupForm">
+        <form name="signupForm" id="signupForm">
             <div>
-                <label for="email">이메일:</label>
-                <input type="email" id="email" class="typing" name="email" placeholder="e-mail 아이디" required>
+                <label for="text">아이디:</label>
+                <input type="text" id="id" class="typing" name="id" placeholder="아이디" required>
             </div><br>
 
             <div>
@@ -35,7 +35,7 @@
 
             <div>
                 <label for="confirm_password">비밀번호 확인:</label>
-                <input type="password" id="confirm_password" class="typing" name="confirm_password"
+                <input type="password" id="confirm_password" class="typing" name="confirmPassword"
                     placeholder="비밀번호 확인" required>
             </div><br>
 
@@ -63,7 +63,7 @@
             </div>
 
             <div class="button-group">
-                <input type="submit" value="회원가입" id="addUserBtn">
+                <input type="submit" value="회원가입" name="addUserBtn" id="addUserBtn">
                 <input type="button" value="취소" onclick="window.history.back()">
             </div>
         </form>
@@ -71,18 +71,18 @@
 
     <script>
         // Firebase 초기화
-        const firebaseConfig = {
-            apiKey: "AIzaSyDY_rShHJYXanLrhjgpyee5jzfyrctIwok",
-            authDomain: "mini-project-ce8f4.firebaseapp.com",
-            databaseURL: "https://mini-project-ce8f4-default-rtdb.firebaseio.com",
-            projectId: "mini-project-ce8f4",
-            storageBucket: "mini-project-ce8f4.appspot.com",
-            messagingSenderId: "267780174541",
-            appId: "1:267780174541:web:9bce134f9caa99db636f84",
-            measurementId: "G-FXC0X6HCRP"
-        };
+        // const firebaseConfig = {
+        //     apiKey: "AIzaSyDY_rShHJYXanLrhjgpyee5jzfyrctIwok",
+        //     authDomain: "mini-project-ce8f4.firebaseapp.com",
+        //     databaseURL: "https://mini-project-ce8f4-default-rtdb.firebaseio.com",
+        //     projectId: "mini-project-ce8f4",
+        //     storageBucket: "mini-project-ce8f4.appspot.com",
+        //     messagingSenderId: "267780174541",
+        //     appId: "1:267780174541:web:9bce134f9caa99db636f84",
+        //     measurementId: "G-FXC0X6HCRP"
+        // };
 
-        firebase.initializeApp(firebaseConfig);
+        // firebase.initializeApp(firebaseConfig);
     </script>
     <script src="./main.js"></script>
 </body>
